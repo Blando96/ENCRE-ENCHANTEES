@@ -1,0 +1,6 @@
+{
+  "name": "CINESCRYPTE IA",
+  "description": "Plateforme SaaS Cinématographique de transformation de romans en films : analyse IA, studio personnages, décors & univers, découpage en scènes, storyboard, génération vidéo, studio audio, montage & contrôle de cohérence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

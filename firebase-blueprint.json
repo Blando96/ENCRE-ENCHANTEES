@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CINESCRYPTE IA Firebase Schema",
+  "description": "Firestore Database Schema for CINESCRYPTE IA - Books to Movies AI Platform",
+  "entities": {
+    "users": {
+      "title": "User",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "provider": { "type": "string" },
+        "plan": { "type": "string" },
+        "credits": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "plan"],
+      "additionalProperties": false
+    },
+    "projects": {
+      "title": "Project",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "author": { "type": "string" },
+        "synopsis": { "type": "string" },
+        "genre": { "type": "string" },
+        "artStyle": { "type": "string" },
+        "aspectRatio": { "type": "string" },
+        "totalChapters": { "type": "number" },
+        "targetScenes": { "type": "number" },
+        "coverUrl": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "title", "synopsis"],
+      "additionalProperties": false
+    }
+  }
+}
